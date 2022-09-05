@@ -3,10 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { Theme } from "./theme";
 
-//pages
-// import Home from './Pages/Home'
-// import SignupPage from "./Pages/SignupPage";
-// import PricingPage from "./Pages/PricingPage";
 import routes from "./routes";
 import Navbar from "./components/Navbar/Navbar";
 function App() {

@@ -21,7 +21,18 @@ const Hero = () => {
           <Link to="/pricing">
             <Button>Get Started</Button>
           </Link>
-          <HeroButton>Find More</HeroButton>
+          <HeroButton
+            onClick={() => {
+              const element = document.getElementById("about");
+              if (element) {
+                element.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            }}
+          >
+            Find More
+          </HeroButton>
         </ButtonWrapper>
       </Container>
     </HeroSection>

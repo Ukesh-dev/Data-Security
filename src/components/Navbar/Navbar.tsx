@@ -82,8 +82,12 @@ const Navbar = () => {
       <Nav scroll={scroll} offsets={offset}>
         <NavbarContainer>
           <NavLogo to="/">
-            <NavIcon src="./assets/logo.png" alt="logo" />
-            Ukesh
+            <NavIcon
+              src="./assets/logo.png"
+              alt="logo"
+              style={{ fontWeight: "bold" }}
+            />
+            Shield
           </NavLogo>
           <MobileIcon onClick={handleClick}>
             {show ? <FaTimes /> : <CgMenuRight />}

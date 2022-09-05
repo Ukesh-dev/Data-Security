@@ -47,29 +47,37 @@ const Form: React.FC = () => {
     {
       label: "Name",
       value: name,
-      onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
-        setName(e.target.value),
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+        setName(e.target.value);
+        setError(null);
+      },
       type: "text",
     },
     {
       label: "Email",
       value: email,
-      onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
-        setEmail(e.target.value),
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+        setEmail(e.target.value);
+        setError(null);
+      },
       type: "email",
     },
     {
       label: "Password",
       value: password,
-      onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
-        setPassword(e.target.value),
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+        setPassword(e.target.value);
+        setError(null);
+      },
       type: "password",
     },
     {
       label: "Confirm Password",
       value: confirmPass,
-      onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
-        setConfirmPass(e.target.value),
+      onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+        setConfirmPass(e.target.value);
+        setError(null);
+      },
       type: "password",
     },
   ];
